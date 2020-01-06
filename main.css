@@ -1,0 +1,244 @@
+.product-overview {
+    position: relative;
+    padding: 0.7rem;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to bottom, rgba(80, 68, 18, 0.6), transparent 25%), url("./images/freedom.jpg") 50% 25%/cover, #ff1b68;
+}
+
+.product-overview h1 {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: #fff;
+    background: #ff1b68;
+    margin-bottom: 0;
+    font-family: 'Anton', sans-serif;
+    padding: 0 0.25rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title {
+    color: #2ddf5c;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/*  */
+/* styles for plan section */
+/*  */
+
+.plan__list {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+.plan {
+    background: #d5ffdc;
+    text-align: center;
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    display: block;
+}
+
+.plan__annotation {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    background: #fff;
+    display: inline-block;
+    color: #19b94c;
+    padding: 0.2rem 0.6rem;
+    box-shadow: 2px 2px 3px 1.5px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.plan__title {
+    color: #0e4f1f;
+    font-size: 1.1rem;
+    margin-top: 0.4rem;
+}
+
+.plan__price {
+    color: #858585;
+}
+
+.plan--highlighted .plan__price{
+    color: #0e4f1f;
+}
+
+.plan--highlighted .plan__title {
+    color: #fff;
+}
+
+/* FEATURES LIST */
+
+.plan__features {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    /* margin: 0 auto; */
+    /* margin-left: 30%; */
+}
+
+.plan__feature {
+    margin: 0.8rem 0;
+}
+
+.plan--highlighted {
+    background: #19b94c;
+    color: #fff;
+}
+
+/*  */
+/* styles for features section that is situated right under the header */
+/*  */
+
+.key-features {
+    margin-top: 2.7rem;
+    /* margin-top: 5rem; */
+    background: #ff1b68;
+    padding: 0.6rem;
+}
+
+.key-features .section-title {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.key-features__items {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    /* width: 30%; */
+}
+
+.key-feature__description {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/*  */
+/* some media queries */
+/*  */
+
+
+@media (min-width: 40rem) {
+
+    .key-features .section-title {
+        font-size: 1.6rem;
+    }
+
+    .key-feature__image {
+        width: 7.5rem;
+        height: 7.5rem;
+        padding: 1.25rem;
+    }
+
+    .key-feature__description {
+        font-size: 1.25rem;
+    }
+
+    .key-features {
+        margin-top: 5rem;
+        padding: 1rem;
+    }
+
+    .plan__feature {
+        margin: 1.5rem 0;
+    }
+
+    .plan__annotation {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.3rem;
+    }
+
+
+    .plan {
+        padding: 1rem;
+        margin: 2rem 5rem;
+    }
+
+    .plan__list {
+        width: 85%;
+    }
+
+    .section-title {
+        vertical-align: middle;
+        font-size: 1.6rem;
+    }
+
+    .product-overview {
+        height: 50vh;
+    }
+
+    .product-overview h1 {
+        font-size: 2.5rem;
+        bottom: 1.5rem;
+        left: 1.5rem;
+    }
+
+    
+    .plan__title {
+        font-size: 1.4rem;
+    }
+    
+}
+
+@media (min-width: 62.5rem) {
+
+    .plan--highlighted {
+        box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .plan {
+        vertical-align: middle;
+        text-align: center;
+        margin: 0 0.3rem;
+        width: 30%;
+        display: inline-block;
+    }
+
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+
+    .product-overview {
+        height: 65vh;
+    }
+
+    .product-overview h1 {
+        font-size: 3rem;
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+    .plan__annotation {
+        display: block;
+    }
+}
+
